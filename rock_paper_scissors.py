@@ -1,12 +1,11 @@
 import random
-
-User = 0
+user = 0
 computer = 0
-opsions = ["rock","paper","scissors"]
+options = ["rock","paper","scissors"]
 while True :
     user_input = input("Rock,Paper,Scissor or Q quit :").lower()
     computer_input = random.randint(0,2)
-    computer_final = opsions[computer_input]
+    computer_final = options[computer_input]
     if user_input == "q":
         break
     elif user_input == "rock" and computer_final == "scissors":
